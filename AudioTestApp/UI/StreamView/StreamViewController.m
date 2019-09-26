@@ -30,20 +30,18 @@ static const CGFloat kScaleFactor = 1.5f;
     _viewModel = [[StreamViewControllerViewModel alloc] init];
     
     [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(startAnimation)
+                                             selector:@selector(start)
                                                  name:UIApplicationDidBecomeActiveNotification
                                                object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(stopAnimation)
+                                             selector:@selector(stop)
                                                  name:UIApplicationDidEnterBackgroundNotification
                                                object:nil];
-    
-    [_viewModel startAudioStream];
 }
 
 - (void) viewWillAppear:(BOOL)animated{
     [super viewWillAppear: animated];
-    [self startAnimation];
+    [self start];
 }
 
 - (void) viewWillDisappear:(BOOL)animated{
@@ -52,13 +50,14 @@ static const CGFloat kScaleFactor = 1.5f;
 
 #pragma mark - support methods
 
-- (void) startAnimation{
+- (void) start{
+    [_viewModel startAudioStream];
     [_viewModel startScaleAnimationWithScale: kScaleFactor
                                     Duration: kAnimationDuration
                                      AndView: self.imgView];
 }
 
-- (void) stopAnimation{
+- (void) stop{
      [_viewModel stopAnimationWithView: self.imgView];
 }
 
