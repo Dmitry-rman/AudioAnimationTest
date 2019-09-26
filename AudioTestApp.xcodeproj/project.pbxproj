@@ -17,6 +17,8 @@
 		0A3B5D61233CA90A00993899 /* AudioTestAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3B5D60233CA90A00993899 /* AudioTestAppUITests.m */; };
 		0A3B5D73233CADC300993899 /* StreamViewControllerViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3B5D72233CADC300993899 /* StreamViewControllerViewModel.m */; };
 		0A3B5D74233CADC300993899 /* StreamViewControllerViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3B5D72233CADC300993899 /* StreamViewControllerViewModel.m */; };
+		0AA0CBAE233D0EC300796B08 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0AA0CBAC233D0EC300796B08 /* Localizable.strings */; };
+		0AA0CBAF233D0EC300796B08 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0AA0CBAC233D0EC300796B08 /* Localizable.strings */; };
 		0AD49FB5233CBB4F0003F704 /* AudioStreamService.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AD49FB4233CBB4F0003F704 /* AudioStreamService.m */; };
 		0AD49FB6233CBB4F0003F704 /* AudioStreamService.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AD49FB4233CBB4F0003F704 /* AudioStreamService.m */; };
 		0AD49FB8233CC8FB0003F704 /* StreamViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AD49FB7233CC8FB0003F704 /* StreamViewController.xib */; };
@@ -53,6 +55,8 @@
 		0A3B5D62233CA90A00993899 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A3B5D71233CADC300993899 /* StreamViewControllerViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StreamViewControllerViewModel.h; sourceTree = "<group>"; };
 		0A3B5D72233CADC300993899 /* StreamViewControllerViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StreamViewControllerViewModel.m; sourceTree = "<group>"; };
+		0AA0CBAD233D0EC300796B08 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		0AA0CBB0233D0EC800796B08 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		0AD49FB3233CBB4F0003F704 /* AudioStreamService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioStreamService.h; sourceTree = "<group>"; };
 		0AD49FB4233CBB4F0003F704 /* AudioStreamService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioStreamService.m; sourceTree = "<group>"; };
 		0AD49FB7233CC8FB0003F704 /* StreamViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StreamViewController.xib; sourceTree = "<group>"; };
@@ -119,6 +123,7 @@
 		0A3B5D6C233CAAC700993899 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				0AA0CBAC233D0EC300796B08 /* Localizable.strings */,
 				0A3B5D50233CA90900993899 /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -233,6 +238,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = 0A3B5D38233CA8FF00993899;
 			productRefGroup = 0A3B5D42233CA8FF00993899 /* Products */;
@@ -250,6 +256,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AA0CBAE233D0EC300796B08 /* Localizable.strings in Resources */,
 				0AD49FB8233CC8FB0003F704 /* StreamViewController.xib in Resources */,
 				0A3B5D54233CA90900993899 /* LaunchScreen.storyboard in Resources */,
 				0A3B5D51233CA90900993899 /* Assets.xcassets in Resources */,
@@ -262,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0AD49FB9233CC8FB0003F704 /* StreamViewController.xib in Resources */,
+				0AA0CBAF233D0EC300796B08 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,6 +326,15 @@
 				0A3B5D53233CA90900993899 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		0AA0CBAC233D0EC300796B08 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0AA0CBAD233D0EC300796B08 /* ru */,
+				0AA0CBB0233D0EC800796B08 /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

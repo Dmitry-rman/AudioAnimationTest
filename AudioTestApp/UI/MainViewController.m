@@ -11,6 +11,7 @@
 
 @interface MainViewController ()
 
+@property (nonatomic, strong) IBOutlet UIButton *startButton;
 @end
 
 @implementation MainViewController
@@ -18,6 +19,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    [self.startButton setTitle: NSLocalizedString(@"Start", nil) forState: UIControlStateNormal];
 }
 
 - (IBAction) startButtonTap:(id)sender{
