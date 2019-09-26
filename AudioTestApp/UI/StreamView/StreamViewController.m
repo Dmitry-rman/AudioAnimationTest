@@ -39,6 +39,10 @@ static const CGFloat kScaleFactor = 1.5f;
                                                object:nil];
 }
 
+- (BOOL) prefersStatusBarHidden{
+    return YES;
+}
+
 - (void) viewWillAppear:(BOOL)animated{
     [super viewWillAppear: animated];
     [self start];
