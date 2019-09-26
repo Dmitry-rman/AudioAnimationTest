@@ -91,5 +91,8 @@
 #pragma mark - dealloc
 - (void) dealloc{
      [[NSNotificationCenter defaultCenter] removeObserver:self name:AVPlayerItemDidPlayToEndTimeNotification object:nil];
+    if (_audioPlayer){
+       [_audioPlayer removeObserver:self forKeyPath:@"status"];
+    }
 }
 @end
